@@ -1,0 +1,11 @@
+.error-message{
+    color:red;
+}
+button {
+    padding:1%;
+    /* margin:5%; */
+}
+.loginContainer{
+margin-top: 10%;
+margin-left:40%;
+}

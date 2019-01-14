@@ -1,0 +1,13 @@
+<mat-toolbar color="accent">
+  <span>My Omdb Movies</span>
+  <div class='navigate'>
+    <nav>
+      <a routerLink="/home">Home</a> |
+      <a routerLink="/add-movie">Add movies</a>
+    </nav>
+  </div>
+  <span *ngIf="user" class='user-details'>{{user.email}}</span>
+  <button class= 'logout' (click)='logout()'>
+      <i class="material-icons">
+          power_settings_new  </i></button>
+</mat-toolbar>

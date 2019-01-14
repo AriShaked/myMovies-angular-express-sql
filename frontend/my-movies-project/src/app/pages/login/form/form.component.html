@@ -1,0 +1,16 @@
+<div class='loginContainer'>
+  Email:<br>
+  <input type="text" name="email" #email>
+  <br>
+  Password:<br>
+  <input type=" text" name="Password" #password>
+  <br><br>
+
+  <button *ngIf="signIn" (click)='userValidation(email.value, password.value)'>Sign-in</button>
+
+  <button *ngIf="signUp" (click)='signUpNewUser(email.value, password.value)'>Sign-up</button>
+
+  <br /><br />
+  <span class='error-message' *ngIf="error">{{error}}</span>
+  <br><br>
+</div>

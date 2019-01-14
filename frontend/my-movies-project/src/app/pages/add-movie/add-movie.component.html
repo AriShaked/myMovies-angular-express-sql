@@ -1,0 +1,10 @@
+<div class='add-movie'>
+  <br><br><br><br>
+  <input type="text" name="searchedMovie" placeholder="Search for movies.." #searchedMovie>
+  <button (click)='searchForMovie(searchedMovie.value)'>Search</button>
+  <br><br>
+  <span class='error-message' *ngIf="error">{{error}}</span>
+</div>
+<div *ngIf="movies">
+  <app-list-movie-item [onAddPage]='onAddPage' [movies]='movies' (movie)="addNewMovieToMyList($event)"></app-list-movie-item>
+</div>

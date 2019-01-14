@@ -1,0 +1,23 @@
+/* :host{
+    display:flex;
+    width:100%;
+    margin: 0 auto;
+} */
+
+
+.navigate-button-div{
+width:100%;
+height: 7%;
+}
+
+.navigate-button{
+    position: absolute;;
+    right:15%;
+    top:10%;
+}
+
+h2 {
+    margin: 2%;
+}
+
+

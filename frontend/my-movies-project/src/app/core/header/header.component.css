@@ -1,0 +1,24 @@
+.user-details{
+    position: absolute;
+    right:20%;
+}
+nav {
+    position: absolute;
+    right: 50%;
+}
+
+.logout{
+    background-color:rgb(248, 248, 248); /* Green */
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+    position: absolute;
+    right: 3%;
+}

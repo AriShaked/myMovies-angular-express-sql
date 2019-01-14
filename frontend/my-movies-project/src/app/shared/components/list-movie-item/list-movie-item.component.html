@@ -1,0 +1,16 @@
+<div class='movies-main' *ngIf="movies">
+  <div>
+    <h2 *ngIf="onAddPage">Search results: {{movies.length}}</h2>
+    <div>
+      <div class='movie-item' *ngFor="let movie of movies">
+        <img src='{{movie.Poster}}' alt="{{movie.title}} poster">
+        <div>Movie Title: {{movie.Title}}</div>
+        <div>Year: {{movie.Year}}</div>
+        <div>imdbID: {{movie.imdbID}}</div>
+        <button *ngIf="onAddPage" class="add-movie" (click)="emitMovieDetails(movie.Title , movie.Year ,movie.imdbID , movie.Poster )">
+            <i class="material-icons">
+                add_circle_outline  </i></button>
+      </div>
+    </div>
+  </div>
+</div>
